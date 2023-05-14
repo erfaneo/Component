@@ -1,0 +1,161 @@
+/* Common Styles */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap');
+
+html {
+    font-size: 20px;
+}
+
+/* Common Styles */
+
+/* Accordion */
+h2, h1, p {
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+}
+
+h2, h1 {
+    font-size: 1.5rem ;
+}
+
+.AccordionH2{
+    background-color: navajowhite;
+    border: 1px solid rgb(255, 186, 82);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.AccordionH2:hover{
+    background-color: rgb(250, 207, 148);
+}
+
+.AccordionP {
+    transform: translateY(-10rem);
+    padding: .5rem;
+    transform-origin: left;
+    transition: all 400ms;
+
+}
+
+.AccordionCntrP {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms;
+
+}
+
+ .Active {
+    max-height: 20rem;
+    transform: translateY(0rem);
+}
+
+.AccordionIcons{
+    font-size: 1rem;
+    text-align: center;
+    height: 100%;
+}
+/* Accordion */
+
+/* Collapse */
+
+button{
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    background-color: burlywood;
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    transition: all 200ms;
+}
+
+.wrapper {
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    box-shadow: 4px 4px 0px black;
+}
+
+.CollapseCntrP{
+    border-radius: .5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 300ms;
+    border: 3px rgba(128, 128, 128, 0) solid;
+    padding: .5rem;
+    color: rgba(240, 248, 255, 0);
+}
+
+.unCollapse{
+    padding: .5rem;
+    max-height: 25rem;
+    color: black;
+    border: 3px gray solid;
+}
+
+/* Collapse */
+
+/* DropDown */
+.Drop {
+    background-color: gainsboro;
+    border-radius: .2rem;
+    scale: 0;
+    transition: all 400ms;
+    transform-origin: top;
+    text-align: center;
+}
+
+.ActiveDrop {
+    scale: 1;
+}
+
+#DropDown li {
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+#DropDown li:hover {
+    scale: 1.2;
+}
+/* DropDown */
+
+/* Modal */
+.modalBg {
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modalCntr{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    transform: translateY(-100vh);
+    transition: all 400ms;
+}
+
+.modalMsg {
+    background-color: gainsboro; 
+    border-radius: .5rem;
+    transform: translateY(-100vh);
+    transition: all 400ms;
+}
+
+.modalMsgActive{
+    transform: translateY(0) !important;
+}
+
+/* Modal */

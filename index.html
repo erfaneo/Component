@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Resources/mcleod-reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Accordion -->
+        <div class="container">
+            <div class="row ">
+                <section class="col-12   p-0 mt-2" id="Accordion">
+                    <div class="wrapper">
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <h1>Accordion</h1>
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <div class="container">
+                            <h2 class="AccordionH2">Item 1 <i class="AccordionIcons bi bi-caret-up"></i></h2>
+                            <div class="AccordionCntrP Active">
+                                <p class="AccordionP Active" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid quibusdam facere quam, molestias reprehenderit! Nemo tenetur aliquid accusamus suscipit corporis odio voluptatibus nesciunt alias harum ipsa architecto, ex fuga.</p>
+                            </div>
+                            <h2 class="AccordionH2">Item 2 <i class="AccordionIcons bi bi-caret-down"></i></h2>
+                            <div class="AccordionCntrP">
+                                <p class="AccordionP" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid quibusdam facere quam, molestias reprehenderit! Nemo tenetur aliquid accusamus suscipit corporis odio voluptatibus nesciunt alias harum ipsa architecto, ex fuga.</p>
+                            </div>
+                            <h2 class="AccordionH2">Item 3 <i class="AccordionIcons bi bi-caret-down"></i></h2>
+                            <div class="AccordionCntrP">
+                                <p class="AccordionP"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid quibusdam facere quam, molestias reprehenderit! Nemo tenetur aliquid accusamus suscipit corporis odio voluptatibus nesciunt alias harum ipsa architecto, ex fuga.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Accordion -->
+                <!-- Collapse -->
+                <section class="col-12   p-0 mt-2" id="Collapse">
+                    <div class="wrapper">
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <h1>Collapse</h1>
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <button class="CollapseBtn col-8 offset-2 col-sm-6 offset-sm-3 col-md-4 offset-md-4 mt-2">Collapse</button>
+                        <div class="CollapseCntrP unCollapse mt-4 mx-3">
+                            <p class="pCollapse">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nesciunt id repudiandae provident. Deserunt perferendis eum doloribus blanditiis aperiam, eveniet, ex soluta amet autem modi voluptas, veritatis saepe eos id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis autem dicta itaque fuga minima veritatis, similique laborum rerum, consectetur pariatur laboriosam excepturi aperiam esse? Omnis commodi cupiditate excepturi blanditiis sequi!</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- Collapse -->
+                <!-- DropDown -->
+                <section class="col-12   p-0 mt-2" id="DropDown">
+                    <div class="wrapper">
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <h1>Drop Down</h1>
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <button class="DropBtn col-8 col-sm-6 offset-sm-3 offset-2 col-md-4 offset-md-4 mt-2">Drop Down</button>
+                        <div class="Drop col-8 offset-2 col-sm-6 offset-sm-3 col-md-4 offset-md-4 d-flex justify-content-center mt-2 py-3">
+                            <ul>
+                                <li>Option One</li>
+                                <hr />
+                                <li>Option Two</li>
+                                <hr />
+                                <li>Option Three</li>
+                                <hr />
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- DropDown -->
+                <!-- Modal -->
+                <section class="col-12   p-0 mt-2" id="Modal">
+                    <div class="wrapper">
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <h1>Modal</h1>
+                        <hr class="col-10 offset-1 col-md-6  offset-md-3" />
+                        <button class="modalBtn col-8 col-sm-6 offset-sm-3 offset-2 col-md-4 offset-md-4 mt-2">Modal</button>
+                    </div>
+                    <div class="modalBg d-none "></div>
+                    <div class="modalCntr container col-10 offset-1 col-lg-6 offset-lg-3 d-flex flex-column justify-content-around align-items-center">
+                        <div class="modalMsg p-3 col-12">
+                            <h2>Lorem</h2>
+                            <p class="my-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem dolores maiores ut nihil facilis, quasi maxime harum, voluptatibus non deleniti impedit ipsum voluptatum repellendus, eaque asperiores ea sunt iste!</p>
+                            <div class="btnCntr d-flex d-md-block flex-column justify-content-center">
+                                <button class="mx-1 mb-3">Learn More</button>
+                                <button class="closeModal mx-1">Close</button>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </section>
+                <!-- Modal -->
+            </div>
+        </div>
+<script src="./functions.js"></script>
+</body>
+</html>
